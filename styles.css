@@ -143,33 +143,36 @@ body {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 100px 50px;
+    gap: 120px 160px;
     padding: 10px 50px 50px 50px;
 }
 
 .container_pic .card {
     position: relative;
     display: flex;
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: rgb(109, 109, 109);
+    flex: 40%;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    width: 340px;
-    height: 200px;
-    background: linear-gradient(to right, rgba(18, 103, 13, 0.2), rgba(1, 169, 12, 0.2), rgba(247, 0, 0, 0.2));
+    width: 50px;
+    height: 220px;
+    background: linear-gradient(to right, rgba(18, 103, 13, 0.1), rgba(1, 169, 12, 0.1), rgba(247, 0, 0, 0.1));
     border-radius: 20px;
-    #box-shadow: 0 35px 80px rgb(8, 81, 22);
     transition: 0.4s;
 }
 
 .container_pic .card:hover{
-    height: 200px;
+    height: 210px;
+    transition: 0.5s;
 }
 
 .container_pic .card .box_pic{
     position: absolute;
     top: 10px;
-    width: 300px;
-    height: 150px;
+    width: 65%;
+    height: 155px;
     background:black;
     border-radius: 12px;
     overflow: hidden;
@@ -182,6 +185,7 @@ body {
     transition: 0.5s;
 }
 
+
 .container_pic .card:hover .box_pic img{
     position: relative;
     top: 0;
@@ -193,37 +197,41 @@ body {
    
 .container_pic .card .content_pic{
     position: absolute;
-    top: 140px;
-    width: 100%;
+    top: 145px;
+    width: 90%;
+    height: 90%;
     padding: 1px 30px;
-    height: 75px;
+    height: 70px;
     overflow: hidden;
     text-align: center;
     transition: 0.5s;
 }
 .container_pic .card:hover .content_pic {
     height: 200px;
-    font-size: 15px;
+    font-size: 18px;
 }
 .container_pic .card .content_pic h3 {
-    font-size: 1.5em;
+    font-size: 30px;
     font-weight: 700;
     color: var(--clr);
+    margin: 1.5rem;
 }
 .container_pic .card .content_pic p{
     color: rgb(0, 0, 0);
+    margin: 1rem;
 }
 .container_pic .card .content_pic a {
     position: relative;
+    font-size: 20px;
     top: 1px;
     display: inline-block;
-    padding: 8px 20px;
+    padding: 10px 20px;
     background: var(--clr);
     color:rgb(77, 22, 22);
     font-weight: 500;
     text-decoration: none;
     border-radius: 100px 100px;
-    animation: blink-text 2s linear infinite;
+    /*animation: blink-text 0.3s linear infinite;*/
 
 }
 
