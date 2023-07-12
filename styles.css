@@ -45,8 +45,13 @@ body {
     color: black;
     
 }
-.nav_bar{
-    background-color: rgba(247, 0, 0, 0.2);
+.nav-links{
+
+    background-color: rgba(190, 0, 0, 0.5);
+    background-image: url(Images/background\ nav-bar.png);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-position: center;
     text-transform: uppercase;
     margin-top: 40px;
 
@@ -64,14 +69,16 @@ body {
     font-size: 20px;
 }
 
-
-.nav_bar li a:visited{
+.nav-links li{
+    padding: 1rem;
+}
+.nav-links li a:visited{
     color: black;
 }
-.nav_bar li a:hover{
+.nav-links li a:hover{
 
     animation: blink-text 1s linear infinite;
-    color: #04AA6D;
+    color: #f7f7f7;
     
 }
 @keyframes blink-text {
@@ -299,6 +306,28 @@ form {
 .vegetables_h2{
     text-align: center;
     font-size: 30px;
+}
+
+.cursor {
+    width: 0.6rem;
+    height: 0.6rem;   
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform ;
+    transform-origin: 60% 60%;
+    z-index: 1;
+    backdrop-filter: grayscale();
+}
+.link-grow{
+    transform: scale(8);
+    border-radius: 50%;
+    background-color: rgba(1, 145, 18, 0.5);
+}
+.hovered-link{
+    color: white;
 }
 
 footer {
