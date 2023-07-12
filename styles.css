@@ -50,7 +50,7 @@ body {
     background-color: rgba(190, 0, 0, 0.5);
     background-image: url(Images/background\ nav-bar.png);
     background-blend-mode: lighten;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     text-transform: uppercase;
     margin-top: 40px;
